@@ -203,7 +203,9 @@ data.csv
 python model.py
 ```
 
-Train the model, or you can download it from the repo.
+This script trains the autoencoder model on normal network traffic data.
+During training, the reconstruction error is calculated and an anomaly detection threshold is computed.
+The resulting threshold value is then manually copied and used in the main script.
 
   ```bash
 python main.py
