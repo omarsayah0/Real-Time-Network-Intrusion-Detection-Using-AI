@@ -196,18 +196,24 @@ pip install pandas numpy scikit-learn tensorflow scapy matplotlib
 data.csv
 
 ```
-input_monitor.py
+
 3-Run :
 
   ```bash
-python heart_disease.py
+python model.py
+```
+
+Train the model, or you can download it from the repo.
+
+  ```bash
+python main.py
 ```
 
 The main script used for real-time network traffic monitoring and anomaly detection.  
 It analyzes live packets and classifies network flows as normal or anomalous.
 
   ```bash
-python heart_disease.py
+python input_monitor.py
 ```
 A debugging script used to display the raw feature values extracted from live network traffic.  
 It helps verify the data being fed into the model without performing prediction or detection.
