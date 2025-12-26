@@ -12,7 +12,7 @@ model = load_model("model.keras")
 with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-threshold = 0.0029992137266807834
+threshold = 0.0029992137266807834 #You get this value when you run model.py it will be printed 
 
 flow_data = {}
 EXPECTED_NUM_FEATURES = 12
@@ -120,4 +120,5 @@ def analyze_packet(packet):
         print(f"normal {error:.5f}")
 
 print("🔍 Starting packet sniffing ...")
+
 sniff(filter="ip", prn=analyze_packet, store=0)
